@@ -302,6 +302,7 @@ body {
      display: flex;   
 }
 .work-item{
+    position: relative;
     flex-basis: calc((100% - 90px)/3);
     margin-left: 30px;
     margin-top: 30px;
@@ -309,6 +310,16 @@ body {
 .work{
     margin-left: -30px;
     margin-top: -30px;
+}
+.work-item-block{
+    position: relative;
+}
+.work-item-title{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
 }
 
 
@@ -603,6 +614,9 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 100;
+    transition: opacity 250ms var(--animation-style),
+    visibility 250ms var(--animation-style);
+    
 }
 .modal{
     width: 528px; 
@@ -612,19 +626,29 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
 }
 .close-icon{
     width: 11px;
     height: 11px; 
 }
-.close-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.close-button{
+    position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: var(--background-textcolor);
+    background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden ;
+    pointer-events: none;
+  
 }

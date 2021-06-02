@@ -46,13 +46,12 @@
       <section class="main-section" >
         <div class=" hero-section overlay">
            <h1 class="main-title">ЭФФЕКТИНОЕ РЕШЕНИЕ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-           <button data-modal-open type="button" class="model-btn"> Заказать услугу </button>
+           <button type="button" class="model-btn" data-modal-open> Заказать услугу </button>
            <div class="backdrop is-hidden" data-modal>
              <div class="modal">
-              <button data-modal-close>
-                <a href="" class="close-link link"></a>
+              <button type="button" class="close-button" data-modal-close>
                 <svg class="close-icon">
-                  <use href="./images/vector.svg#icon-Vector"></use>
+                  <use href="./images/close.svg#icon-Vector"></use>
                 </svg>
               </button>
              </div>
@@ -125,9 +124,24 @@
         <h2 class="second-title">Чем мы занимаемся</h2>
     
         <ul class="work list work-container">
-            <li class="work-item"><img src="./images/logo1.jpg" alt="Програмирование" width="370"></li>
-            <li class="work-item"><img src="./images/logo2.jpg" alt="Телефон" width="370"></li>
-            <li class="work-item"><img src="./images/logo3.jpg" alt="Планшет" width="370"></li>
+            <li class="work-item">
+               <div class="work-item-block">
+              <img src="./images/logo1.jpg" alt="Програмирование" width="370">
+            <p class="work-item-title"> Дизайнерские приложения</p>
+            </div>
+            </li>
+            <li class="work-item">
+              <div class="work-item-block">
+              <img src="./images/logo2.jpg" alt="Телефон" width="370">
+            <p class="work-item-title"> Мобильные приложения </p>
+            </div>
+            </li>
+            <li class="work-item">
+              <div class="work-item-block">
+              <img src="./images/logo3.jpg" alt="Планшет" width="370">
+              <p class="work-item-title">Дизайнерские решения</p>
+              <div>
+            </li>
         </ul>
         </div>
     </section>
